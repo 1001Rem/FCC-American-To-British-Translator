@@ -83,6 +83,9 @@ emitter.run = function() {
       context = context.slice(0, -(s.title.length + separator.length))
     })
   } catch(e) {
+    console.log(e);
+    console.log('Expected:', expected);
+    console.log('Actual:', actual);
     throw(e);
   }
 };
